@@ -18,10 +18,7 @@ parameters:
   iterations: '5'
 # The url and blockNumber of archive node
 networks:
-  bsc:
-    url: "https://spring-empty-field.bsc.discover.quiknode.pro/a3c42e4b25fe985fe3654add8b5bb8c18dde2c43/"
-    blockNumber: '14433982'
-    # The url of JSON-RPC
-    JSONRPC: "http://127.0.0.1:8545"
-  eth:
-    url: "https://wandering-proud-bush.discover.quiknode.pro/17bf7e4b0bdbf9d31aa1495bb66b1430aacde04d/"
+  url: "https://speedy-nodes-nyc.moralis.io/TOKEN/bsc/mainnet/archive"
+  blockNumber: '14433982'
+  # The url of JSON-RPC
+  JSONRPC: "http://127.0.0.1:8545"
