@@ -2,10 +2,11 @@
 description: "On Jan-17-2022 03:34:17 AM +UTC, an attacker manipulate the price of BURG in the PancakeSwap and gained ~77K worth of asset. The attack was caused by a smart contract vulnerability that allows the token to burn in any account."
 # The interfaces required exploit this exploit
 interfaces:
-  - 'IERC20.sol'
-  - 'IPancakeRouter.sol'
-  - 'IPancakeSwap.sol'
-  - 'IWBNB.sol'
+  - PancakeSwap/IERC20.sol
+  - PancakeSwap/IPancakeRouter01.sol
+  - PancakeSwap/IPancakeRouter02.sol
+  - PancakeSwap/IPancakePair.sol
+  - PancakeSwap/IWETH.sol
 # The address requird by this exploit
 address:
   PAIR: '0x02b0551B656509754285eeC81eE894338E14C5DD'
