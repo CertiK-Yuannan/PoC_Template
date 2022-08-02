@@ -1,25 +1,23 @@
-# The description and helper of this exploit
-description: "On Jan-17-2022 03:34:17 AM +UTC, an attacker manipulate the price of BURG in the PancakeSwap and gained ~77K worth of asset. The attack was caused by a smart contract vulnerability that allows the token to burn in any account."
-# The interfaces required exploit this exploit
-interfaces:
-  - PancakeSwap/IERC20.sol
-  - PancakeSwap/IPancakeRouter01.sol
-  - PancakeSwap/IPancakeRouter02.sol
-  - PancakeSwap/IPancakePair.sol
-  - PancakeSwap/IWETH.sol
-# The address requird by this exploit
 address:
-  PAIR: '0x02b0551B656509754285eeC81eE894338E14C5DD'
-  VULNERABLE_TOKEN: '0xF40d33DE6737367A1cCB0cE6a056698D993A17E1'
-  ROUTER: '0x10ED43C718714eb63d5aA57B78B54704E256024E'
-  WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
-# Other parameters for this exploit
-parameters:
-  amount: '100e18'
-  iterations: '5'
-# The url and blockNumber of archive node
+  pair: '0x02b0551B656509754285eeC81eE894338E14C5DD'
+  vulnerableToken: '0xF40d33DE6737367A1cCB0cE6a056698D993A17E1'
+  router: '0x10ED43C718714eb63d5aA57B78B54704E256024E'
+  wbnb: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+description: On Jan-17-2022 03:34:17 AM +UTC, an attacker manipulate the price of
+  BURG in the PancakeSwap and gained ~77K worth of asset. The attack was caused by
+  a smart contract vulnerability that allows the token to burn in any account.
+interfaces:
+- PancakeSwap/IERC20.sol
+- PancakeSwap/IPancakeRouter01.sol
+- PancakeSwap/IPancakeRouter02.sol
+- PancakeSwap/IPancakePair.sol
+- PancakeSwap/IWETH.sol
 networks:
-  url: "https://speedy-nodes-nyc.moralis.io/TOKEN/bsc/mainnet/archive"
+  JSONRPC: http://127.0.0.1:8545
   blockNumber: '14433982'
-  # The url of JSON-RPC
-  JSONRPC: "http://127.0.0.1:8545"
+  url: https://nd-615-585-235.p2pify.com/b4998084582e65fec3eb93545a6a8deb
+parameters:
+  swapAmount: '19999'
+  burnAmount: '19999'
+  numberOfSwapOperations: '4'
+  numberOfBurnOperations: '11'
