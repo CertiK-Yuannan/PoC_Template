@@ -1,11 +1,5 @@
 address:
-  pair: '0x02b0551B656509754285eeC81eE894338E14C5DD'
-  vulnerableToken: '0xF40d33DE6737367A1cCB0cE6a056698D993A17E1'
-  router: '0x10ED43C718714eb63d5aA57B78B54704E256024E'
-  wbnb: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
-description: On Jan-17-2022 03:34:17 AM +UTC, an attacker manipulate the price of
-  BURG in the PancakeSwap and gained ~77K worth of asset. The attack was caused by
-  a smart contract vulnerability that allows the token to burn in any account.
+description: This is a template for CTF
 interfaces:
 - PancakeSwap/IERC20.sol
 - PancakeSwap/IPancakeRouter01.sol
@@ -13,12 +7,9 @@ interfaces:
 - PancakeSwap/IPancakePair.sol
 - PancakeSwap/IWETH.sol
 networks:
-  blockNumber: '14433982'
-  isForking: '1'
-  privateKey: ''
-  url: https://nd-615-585-235.p2pify.com/b4998084582e65fec3eb93545a6a8deb
+  blockNumber: '12816860'
+  url: http://127.0.0.1:8545/625fb01c-bfcc-431c-bcfa-1834cec8f18d
+  isForking: '0'
+  privateKey: '0xfa03d3b5ac9d4bc01729ca8ad5e3e850a3b226c7b64a117ce58f9b3068950ca9'
 parameters:
-  swapAmount: '19999'
-  burnAmount: '19999'
-  numberOfSwapOperations: '4'
-  numberOfBurnOperations: '11'
+
