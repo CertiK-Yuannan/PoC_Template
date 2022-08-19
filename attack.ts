@@ -12,6 +12,7 @@ async function main() {
 
   // Setup account
   const [signer] = await hre.ethers.getSigners();
+  console.log("Account balance:", (await signer.getBalance()).toString());
 
   // Deploy exploit contract with intialized parameters from config.yml
   const exploit = await new Exploit__factory(signer).deploy();
