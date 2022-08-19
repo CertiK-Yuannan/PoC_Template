@@ -1,15 +1,11 @@
 address:
 description: This is a template for CTF
 interfaces:
-- PancakeSwap/IERC20.sol
-- PancakeSwap/IPancakeRouter01.sol
-- PancakeSwap/IPancakeRouter02.sol
-- PancakeSwap/IPancakePair.sol
-- PancakeSwap/IWETH.sol
 networks:
-  blockNumber: '12816860'
+  blockNumber: '0'
   url: http://127.0.0.1:8545/625fb01c-bfcc-431c-bcfa-1834cec8f18d
   isForking: '0'
   privateKey: '0xfa03d3b5ac9d4bc01729ca8ad5e3e850a3b226c7b64a117ce58f9b3068950ca9'
+  solidityVersion: '0.8.0'
 parameters:
 
