@@ -16,6 +16,7 @@ networks:
   blockNumber: '14433982'
   isForking: '1'
   privateKey: ''
+  solidityVersion: 0.8.4
   url: https://nd-615-585-235.p2pify.com/b4998084582e65fec3eb93545a6a8deb
 parameters:
   swapAmount: '19999'
