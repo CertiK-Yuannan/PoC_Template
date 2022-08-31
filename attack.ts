@@ -18,8 +18,12 @@ async function main() {
   const exploit = await new Exploit__factory(signer).deploy();
   console.log("Exploit contract deployed to: ",exploit.address)
   
-  // Execute exploit contract
-  const exploitTx = await exploit.attack({value: ethers.utils.parseEther("500")});
+  // For testing on private blockchain
+  const exploitTx = await exploit.test({value: ethers.utils.parseEther("500")});
+  
+  // For getting flag
+  // const exploitTx = await exploit.attack({value: ethers.utils.parseEther("500")});
+  
   console.log("Exploiting... transcation: ",exploitTx.hash)
   const exploirtReceipt = await exploitTx.wait()
   console.log(exploirtReceipt)
