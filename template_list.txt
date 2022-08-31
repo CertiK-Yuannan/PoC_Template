@@ -1,2 +1,2 @@
 public_burn
-ctf_template
+paradigm_ctf_template
